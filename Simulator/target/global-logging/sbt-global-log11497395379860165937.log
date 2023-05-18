@@ -1,0 +1,42 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(263e60ea-3cae-4d87-9ec0-1241b7366559), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/scala/Main.scala:12:8: not found: object Escala[0m
+[0m[[0m[31merror[0m] [0m[0mimport Escala.Event[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/scala/Main.scala:13:8: object Person is not a member of package scala[0m
+[0m[[0m[31merror[0m] [0m[0mimport scala.Person[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/scala/Main.scala:21:19: not found: value Event[0m
+[0m[[0m[31merror[0m] [0m[0m      val event = Event([0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/scala/Main.scala:24:9: not found: value Coords[0m
+[0m[[0m[31merror[0m] [0m[0m        Coords(Random.between(-50.0, 50.0), Random.between(-50.0, 50.0)),[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/scala/Main.scala:24:23: value between is not a member of object scala.util.Random[0m
+[0m[[0m[31merror[0m] [0m[0m        Coords(Random.between(-50.0, 50.0), Random.between(-50.0, 50.0)),[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/scala/Main.scala:24:52: value between is not a member of object scala.util.Random[0m
+[0m[[0m[31merror[0m] [0m[0m        Coords(Random.between(-50.0, 50.0), Random.between(-50.0, 50.0)),[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/scala/Main.scala:25:22: value between is not a member of object scala.util.Random[0m
+[0m[[0m[31merror[0m] [0m[0m        (1 to Random.between(1, 5)).map(_ => keywords(Random.nextInt(keywords.size))).toList,[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/scala/Main.scala:26:22: value between is not a member of object scala.util.Random[0m
+[0m[[0m[31merror[0m] [0m[0m        (1 to Random.between(1, 10)).map(_ =>[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/scala/Main.scala:27:11: not found: value Person[0m
+[0m[[0m[31merror[0m] [0m[0m          Person([0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/scala/Main.scala:32:16: value between is not a member of object scala.util.Random[0m
+[0m[[0m[31merror[0m] [0m[0m        Random.between(0, 100),[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/scala/Main.scala:33:16: value between is not a member of object scala.util.Random[0m
+[0m[[0m[31merror[0m] [0m[0m        Random.between(-30, 50)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m11 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 16 mai 2023, 07:50:56[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

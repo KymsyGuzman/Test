@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/scala/NameGenerator.scala:13:25: value between is not a member of scala.util.Random[0m
+[0m[[0m[31merror[0m] [0m[0m      val year = random.between(2000, 2020)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/scala/NameGenerator.scala:24:27: No Json serializer found for type Seq[NameGenerator.NameData]. Try to implement an implicit Writes or Format for this type.[0m
+[0m[[0m[31merror[0m] [0m[0m    val json = Json.toJson(namesData)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
