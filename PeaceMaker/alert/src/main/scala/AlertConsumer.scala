@@ -72,7 +72,7 @@ object Main {
         kafkaSink.value.send("alert", "event_alert", alertJsonString)
 
         // Send email
-        val to = "peaceland044@gmail.com"
+        val to = "marouaboudouk@gmail.com"
         val subject = "Dangerous Person Detected"
         val body = s"Dangerous person detected: $alertJsonString"
         EmailSender.sendEmail(to, subject, body)

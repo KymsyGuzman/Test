@@ -2,11 +2,15 @@ ThisBuild / version := "0.1.0-SNAPSHOT"
 
 scalaVersion := "2.12.17"
 name := "alert"
-
+//fork := true
+javaOptions += "--add-exports java.base/sun.nio.ch=ALL-UNNAMED"
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-streaming-kafka-0-10" % "3.2.1",
-  "org.apache.spark" %% "spark-streaming" % "3.2.1",
-  "org.apache.spark" %% "spark-core" % "3.2.1",
+  "org.apache.spark" %% "spark-streaming-kafka-0-10" % "3.4.0",
+  "org.apache.spark" %% "spark-streaming" % "3.4.0",
+  "org.apache.spark" %% "spark-core" % "3.4.0",
+  //"org.apache.spark" %% "spark-streaming-kafka-0-10" % "3.2.1",
+  //"org.apache.spark" %% "spark-streaming" % "3.2.1",
+  //"org.apache.spark" %% "spark-core" % "3.2.1",
   //"org.apache.spark" %% "spark-core" % "2.4.0",
   //"org.apache.spark" %% "spark-streaming" % "2.4.0" ,
   //"org.apache.spark" %% "spark-streaming-kafka-0-10" % "2.4.0",
@@ -18,3 +22,4 @@ libraryDependencies ++= Seq(
   "org.scala-lang" % "scala-library" % scalaVersion.value,
   
 )
+javaHome := Some(file("/usr/bin/java"))
