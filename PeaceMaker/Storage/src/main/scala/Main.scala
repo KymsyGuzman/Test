@@ -1,3 +1,5 @@
+package Storage
+
 import play.api.libs.json._
 
 import java.io.FileNotFoundException
@@ -19,7 +21,7 @@ import org.apache.spark.streaming.kafka010.LocationStrategies._
 import org.apache.spark.SparkConf
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.Encoders
-import org.apache.spark.sql.SQLContext  
+import org.apache.spark.sql.SQLContext
 
 import scala.reflect.ClassTag
 
@@ -45,7 +47,7 @@ object Main extends App {
       "group.id" -> "aggregate"
   )
   
-  val topics = Array("peaceland")
+  val topics = Array("peacestate")
 
   val stream = KafkaUtils.createDirectStream[String, String](
       streamContext,
