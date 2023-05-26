@@ -1,6 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/maroua/Downloads/sbt-project/sbt-project/alert/src/main/scala/AlertConsumer.scala:65:23: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : alert.Coordonnees[0m
-[0m[[0m[31merror[0m] [0m[0m required: alert.Location[0m
-[0m[[0m[31merror[0m] [0m[0m                event.location,[0m
-[0m[[0m[31merror[0m] [0m[0m                      ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m

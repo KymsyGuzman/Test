@@ -1,0 +1,5 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(project Simulator, Some(ff5064e7-91e5-4fad-bf42-f2a5b2c56751), Some(CommandSource(console0)))[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid project ID: Simulator[0m
+[0m[[0m[31merror[0m] [0m[0mproject Simulator[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

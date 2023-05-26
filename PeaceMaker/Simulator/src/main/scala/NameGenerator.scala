@@ -29,7 +29,7 @@ object NameGenerator {
     val namesData = generateNamesData()
     val json = Json.toJson(namesData)
 
-    val filePath = "/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/resources/names.json"
+    val filePath = "../PeaceMaker/Simulator/src/main/resources/names.json"
 
     val fileWriter = new FileWriter(filePath)
     try {

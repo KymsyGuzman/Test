@@ -60,7 +60,7 @@ object Main {
   }
  
   def main(args: Array[String]): Unit = {
-    val namesFileName = "/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Simulator/src/main/resources/names.json"
+    val namesFileName = "../PeaceMaker/Simulator/src/main/resources/names.json"
     val keywords = List("hello", "happy", "peace" , "sad", "angry", "unhappy", "not in peace")
 
     try {

@@ -1,5 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
-[0m[[0m[0minfo[0m] [0m[0msbt server started at local:///home/kymsy/.sbt/1.0/server/8a25c78af59666d37fd3/sock[0m
-[0m[[0m[0mdebug[0m] [0m[0mWriting bsp connection file[0m
-[0m[[0m[0minfo[0m] [0m[0mstarted sbt server[0m

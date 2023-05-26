@@ -1,6 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(795e698f-5447-4dec-8262-27e2a0550fcb), Some(CommandSource(console0)))[0m
-[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/alert/target/scala-2.12/classes ...[0m
-[0m[[0m[32msuccess[0m] [0m[0mTotal time: 4 s, completed 26 mai 2023, 14:24:05[0m
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

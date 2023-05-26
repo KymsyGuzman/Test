@@ -1,9 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/maroua/Downloads/sbt-project/sbt-project/alert/target/scala-3.2.1/alert_3-0.1.0-SNAPSHOT-sources.jar ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	EmailSender.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/maroua/Downloads/sbt-project/sbt-project/alert/src/main/scala/EmailSender.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	AlertConsumer.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/maroua/Downloads/sbt-project/sbt-project/alert/src/main/scala/AlertConsumer.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	AlertProducer.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/maroua/Downloads/sbt-project/sbt-project/alert/src/main/scala/AlertProducer.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
