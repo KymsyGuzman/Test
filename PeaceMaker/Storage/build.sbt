@@ -12,6 +12,5 @@ libraryDependencies ++= Seq(
   "com.typesafe.play" %% "play-json" % "2.8.0",
   "javax.mail" % "javax.mail-api" % "1.6.2",
   "com.sun.mail" % "javax.mail" % "1.6.2",
-  "org.scala-lang" % "scala-library" % scalaVersion.value,
-  "datamodel" % "datamodel_3" % "0.1.0-SNAPSHOT"
+  "org.scala-lang" % "scala-library" % scalaVersion.value
 )

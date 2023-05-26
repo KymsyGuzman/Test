@@ -25,7 +25,6 @@ import scala.reflect.ClassTag
 
 import org.apache.log4j.{Level, Logger}
 
-import data._
 
 object Main extends App {
   // keep only the errors
