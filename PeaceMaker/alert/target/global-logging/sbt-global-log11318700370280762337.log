@@ -1,0 +1,28 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(efd26c1d-de41-47be-8dcb-3f0ea1961d09), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/maroua/Downloads/sbt-project/sbt-project/alert/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/maroua/Downloads/sbt-project/sbt-project/alert/src/main/scala/AlertConsumer.scala:16:8: not found: object data[0m
+[0m[[0m[31merror[0m] [0m[0mimport data._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/maroua/Downloads/sbt-project/sbt-project/alert/src/main/scala/AlertConsumer.scala:55:13: not found: value Event[0m
+[0m[[0m[31merror[0m] [0m[0m            Event.EventFormatter.reads(json).asOpt[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/maroua/Downloads/sbt-project/sbt-project/alert/src/main/scala/AlertConsumer.scala:61:29: not found: value Alert[0m
+[0m[[0m[31merror[0m] [0m[0m            val new_alert = Alert([0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/maroua/Downloads/sbt-project/sbt-project/alert/src/main/scala/AlertProducer.scala:16:32: not found: type KafkaProducerString[0m
+[0m[[0m[31merror[0m] [0m[0m            val producer = new KafkaProducerString[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/maroua/Downloads/sbt-project/sbt-project/alert/src/main/scala/EmailSender.scala:23:15: overloaded method value setRecipients with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (x$1: javax.mail.Message.RecipientType,x$2: String)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x$1: javax.mail.Message.RecipientType,x$2: Array[javax.mail.Address])Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (javax.mail.Message.RecipientType, Array[javax.mail.internet.InternetAddress])[0m
+[0m[[0m[31merror[0m] [0m[0m      message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to))[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 8 mai 2023, 16:52:50[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

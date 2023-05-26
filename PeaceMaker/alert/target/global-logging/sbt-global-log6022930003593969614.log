@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(aa90940e-ee4a-4189-9910-d1a3545893eb), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/maroua/Downloads/sbt-project/sbt-project/alert/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/maroua/Downloads/sbt-project/sbt-project/alert/src/main/scala/EmailSender.scala:38:8: EmailSender is already defined as object EmailSender[0m
+[0m[[0m[31merror[0m] [0m[0mobject EmailSender {[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 8 mai 2023, 16:51:58[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

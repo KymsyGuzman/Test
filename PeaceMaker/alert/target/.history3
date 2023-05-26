@@ -1,0 +1,45 @@
+1682577576120:;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/zs/ky4z5d5d51z25l3c5z8cfc400000gn/T/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/Users/maroua/Library/Application Support/JetBrains/IdeaIC2022.2/plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.0/2021.3.0/sbt-structure-extractor-2021.3.0.jar" org.jetbrains.sbt.CreateTasks;preferScala2;*/*:dumpStructure
+1683556126811:compile
+1683556764923:reload
+1683556783438:compile
+1683556928473:reload
+1683556932650:compile
+1683796448936:reload
+1683796455972:compile
+1683796569369:cd ..
+1683796674362:compile
+1683796721164:reload
+1683796728202:compile
+1683796747761:reload
+1683796750088:compile
+1683796810582:project simulator
+1683797930319:reload
+1683797936396:compile
+1683798015642:project dataModel
+1683798091608:reload
+1683798096827:compile
+1683798135640:reload
+1683798140412:compile
+1683798164860:reload
+1683798168160:compile
+1683798297259:reload
+1683798300071:compile
+1683798439416:reload
+1683798442472:compile
+1683798470094:publishLocal
+1684789359807:compile
+1684789753545:reload
+1684789760565:compile
+1684790046271:reload
+1684790053351:[A
+1684790057024:compile
+1684791449196:reload
+1684792676786:compile
+1684793490951:reload
+1684793497718:compile
+1685088475561:libraryDependencies / datamodel
+1685088511424:show libraryDependencies
+1685090312400:compile
+1685093007659:run
+1685103840896:compile
+1685103847823:run
