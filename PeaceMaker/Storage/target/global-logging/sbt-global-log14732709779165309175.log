@@ -1,0 +1,17 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(db1ea9f1-29df-443a-8324-98eee59a491d), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Storage/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Storage/src/main/scala/Event.scala:9:35: not found: type Coordonnees[0m
+[0m[[0m[31merror[0m] [0m[0m                        location: Coordonnees,[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Storage/src/main/scala/Main.scala:60:7: not found: value Event[0m
+[0m[[0m[31merror[0m] [0m[0m      Event.EventFormatter.reads(json).asOpt[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kymsy/Documents/m1bdml/dataengarchi/PeaceWatcher/PeaceMaker/Storage/src/main/scala/Main.scala:65:7: not found: value SaveableEvent[0m
+[0m[[0m[31merror[0m] [0m[0m      SaveableEvent(event.peacewatcher_id, serializedTime, event.location, event.words, event.persons, event.battery, event.temperature)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 26 mai 2023, 15:26:27[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
