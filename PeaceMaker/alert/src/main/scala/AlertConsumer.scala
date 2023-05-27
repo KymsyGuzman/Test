@@ -1,85 +1,63 @@
 package alert
 
 import java.util.Properties
+import java.time.Duration
+import org.apache.kafka.common.serialization.StringSerializer
+import org.apache.kafka.common.serialization.StringDeserializer
+import org.apache.kafka.clients.consumer.{KafkaConsumer, ConsumerConfig}
+import scala.collection.JavaConverters._
 import play.api.libs.json._
-import org.apache.kafka.common.serialization.{StringDeserializer, StringSerializer}
-import org.apache.kafka.clients.consumer.ConsumerConfig
-import org.apache.kafka.clients.producer.ProducerConfig
-import org.apache.spark.streaming.kafka010._
-import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
-import org.apache.spark.streaming.kafka010.LocationStrategies._
-import org.apache.spark.streaming.{Seconds, StreamingContext}
-import org.apache.spark.SparkConf
-
-import org.apache.log4j.{Level, Logger}
+import org.apache.kafka.clients.producer._
 
 object Main {
 
   def main(args: Array[String]): Unit = {
-    // Keep only the errors
-    Logger.getLogger("org").setLevel(Level.ERROR)
 
-    val sparkConf = new SparkConf()
-      .setAppName("peaceland_alert")
-      .setMaster("local[*]")
-      .set("spark.driver.host", "127.0.0.1")
+    val propsConsumer = new Properties()
+    propsConsumer.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
+    propsConsumer.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer])
+    propsConsumer.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer])
+    propsConsumer.put(ConsumerConfig.GROUP_ID_CONFIG, "alert_consumer")
+    val consumer = new KafkaConsumer[String, String](propsConsumer)
 
-    val ssc = new StreamingContext(sparkConf, Seconds(5))
+    val propsProducer = new Properties()
+    propsProducer.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
+    propsProducer.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, classOf[StringSerializer])
+    propsProducer.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, classOf[StringSerializer])
+    val producer = new KafkaProducer[String, String](propsProducer)
 
-    val kafkaParams = Map(
-      "bootstrap.servers" -> "localhost:9092",
-      "key.deserializer" -> classOf[StringDeserializer],
-      "value.deserializer" -> classOf[StringDeserializer],
-      "group.id" -> "alert_consumer"
-    )
+    val topic = "peacestate"
+    consumer.subscribe(java.util.Collections.singletonList(topic))
 
-    val topics = Array("peacestate")
+    while(true) {
+      val records = consumer.poll(Duration.ofMillis(10000)).asScala
+      for (record <- records) {
+        val json = Json.parse(record.value())
+        Json.fromJson[Event](json).asOpt.foreach(event => {
+          val dangerousPersons = event.persons.filter(person => person.peacescore < 0.2)
+          dangerousPersons.foreach(person => println(s"[ALERT] ${person.name} is dangerous with ${person.peacescore} as peacescore."))
+          if (dangerousPersons.nonEmpty) {
+            val newAlert = Alert(
+              event.peacewatcher_id,
+              event.timestamp,
+              Location(event.location.latitude, event.location.longitude),
+              event.words,
+              event.persons.filter(person => person.peacescore < 0.2),
+              event.battery,
+              event.temperature
+            )
+            val alertJsonString = Json.stringify(Json.toJson(newAlert))
+            producer.send(new ProducerRecord[String, String]("alert", "event_alert", alertJsonString))
 
-    val stream = KafkaUtils.createDirectStream[String, String](
-      ssc,
-      PreferConsistent,
-      Subscribe[String, String](topics, kafkaParams)
-    )
-
-    val props = new Properties()
-    props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
-    props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, classOf[StringSerializer].getName)
-    props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, classOf[StringSerializer].getName)
-
-    val sparkContext = ssc.sparkContext
-    val kafkaSink = sparkContext.broadcast(KafkaSink(props))
-
-    stream.flatMap(record => {
-      val json = Json.parse(record.value())
-      Json.fromJson[Event](json).asOpt
-    }).filter(event => {
-      val dangerousPersons = event.persons.filter(person => person.peacescore < 0.2)
-      dangerousPersons.foreach(person => println(s"[ALERT] ${person.name} is dangerous with ${person.peacescore} as peacescore."))
-      dangerousPersons.nonEmpty
-    }).map({ event =>
-      val newAlert = Alert(
-        event.peacewatcher_id,
-        event.timestamp,
-        Location(event.location.latitude, event.location.longitude),
-        event.words,
-        event.persons.filter(person => person.peacescore < 0.2),
-        event.battery,
-        event.temperature
-      )
-      Json.stringify(Json.toJson(newAlert))
-    }).foreachRDD({ rdd =>
-      rdd.foreach({ alertJsonString =>
-        kafkaSink.value.send("alert", "event_alert", alertJsonString)
-
-        // Send email
-        val to = "marouaboudouk@gmail.com"
-        val subject = "Dangerous Person Detected"
-        val body = s"Dangerous person detected: $alertJsonString"
-        EmailSender.sendEmail(to, subject, body)
-      })
-    })
-
-    ssc.start()
-    ssc.awaitTermination()
+            // Send email
+            val to = "marouaboudouk@gmail.com"
+            val subject = "Dangerous Person Detected"
+            val body = s"Dangerous person detected: $alertJsonString"
+            EmailSender.sendEmail(to, subject, body)
+          }
+        })
+      }
+    }
+    consumer.close()
   }
 }

@@ -218,3 +218,75 @@ mai 27, 2023 11:47:02 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint noti
 INFOS: Unsupported notification method: $/setTrace
 mai 27, 2023 4:18:33 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFOS: Unsupported notification method: $/setTrace
+2023.05.27 16:40:55 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/src/main/scala/AlertConsumer.scala
+mai 27, 2023 4:40:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 16
+2023.05.27 16:40:58 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/src/main/scala/Alert.scala
+2023.05.27 16:44:27 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/src/main/scala/EmailSender.scala
+2023.05.27 16:44:49 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/src/main/scala/EmailSender.scala
+2023.05.27 16:45:30 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/src/main/scala/AlertConsumer.scala
+2023.05.27 16:46:25 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/src/main/scala/AlertProducer.scala
+2023.05.27 16:57:27 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 16:57:45 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 16:57:46 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 16:57:47 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 17:04:41 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 17:06:21 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 17:07:01 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/Simulator/src/main/scala/Main.scala
+2023.05.27 17:07:38 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/Simulator/build.sbt
+2023.05.27 17:08:32 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 17:08:33 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 17:09:16 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/Simulator/src/main/scala/Main.scala
+2023.05.27 17:09:45 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/Simulator/src/main/scala/NameGenerator.scala
+2023.05.27 17:10:02 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/Simulator/src/main/scala/Main.scala
+2023.05.27 17:28:43 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/src/main/scala/AlertConsumer.scala
+2023.05.27 17:30:52 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 17:32:38 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 17:34:19 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/src/main/scala/AlertConsumer.scala
+2023.05.27 17:39:05 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/Simulator/build.sbt
+2023.05.27 17:39:14 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 17:39:18 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 17:40:36 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 17:41:09 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 17:57:17 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/build.sbt
+2023.05.27 17:58:21 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/build.sbt
+mai 27, 2023 5:58:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 854
+2023.05.27 18:25:59 INFO  Shutting down server
+2023.05.27 18:25:59 INFO  shutting down Metals
+2023.05.27 18:25:59 INFO  Exiting server
+2023.05.27 18:40:55 INFO  Started: Metals version 0.11.12 in workspace '/Users/maroua/Downloads/test simulator/Test-1' for client Visual Studio Code 1.78.2.
+mai 27, 2023 6:40:55 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFOS: Flyway Community Edition 9.16.3 by Redgate
+mai 27, 2023 6:40:55 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: See release notes here: https://rd.gt/416ObMi
+mai 27, 2023 6:40:55 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFOS: 
+mai 27, 2023 6:40:56 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFOS: Database: jdbc:h2:file:/Users/maroua/Downloads/test simulator/Test-1/.metals/metals (H2 2.1)
+mai 27, 2023 6:40:57 PM org.flywaydb.core.internal.command.DbValidate validate
+INFOS: Successfully validated 4 migrations (execution time 00:00.124s)
+mai 27, 2023 6:40:57 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFOS: Current version of schema "PUBLIC": 4
+mai 27, 2023 6:40:57 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFOS: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.27 18:40:57 INFO  time: initialize in 2.5s
+2023.05.27 18:41:13 WARN  Build server is not auto-connectable.
+2023.05.27 18:50:32 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/src/main/scala/AlertConsumer.scala
+2023.05.27 18:50:48 INFO  no build target found for /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/src/main/scala/AlertConsumer.scala. Using presentation compiler with project's scala-library version: 3.2.2
+mai 27, 2023 6:50:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 4
+mai 27, 2023 6:50:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6
+2023.05.27 18:50:54 INFO  time: code lens generation in 18s
+2023.05.27 18:50:54 INFO  time: code lens generation in 5.49s
+2023.05.27 18:50:54 INFO  time: code lens generation in 5.55s
+mai 27, 2023 6:50:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 8
+mai 27, 2023 6:50:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 11
+mai 27, 2023 6:50:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 12
+mai 27, 2023 7:05:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 24
+2023.05.27 19:05:56 WARN  no build target for: /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/src/main/scala/AlertConsumer.scala

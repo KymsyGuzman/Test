@@ -1,0 +1,82 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(43e83c0f-e2d8-432d-bcbc-c67d0683146c), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/maroua/Downloads/test simulator/Test-1/PeaceMaker/alert/target/scala-2.12/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mCompile / run / javaOptions will be ignored, Compile / run / fork is set to false[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.RuntimeException: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at[0m
+[0m[[0m[31merror[0m] [0m[0m535 5.7.8  https://support.google.com/mail/?p=BadCredentials c7-20020a05600c0ac700b003f4fb5532a1sm8758285wmr.43 - gsmtp[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.EmailSender$.sendEmail(EmailSender.scala:35)[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.Main$.$anonfun$main$2(AlertConsumer.scala:56)[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.Main$.$anonfun$main$2$adapted(AlertConsumer.scala:36)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Option.foreach(Option.scala:407)[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.Main$.$anonfun$main$1(AlertConsumer.scala:36)[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.Main$.$anonfun$main$1$adapted(AlertConsumer.scala:34)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:943)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:943)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.Main$.main(AlertConsumer.scala:34)[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.Main.main(AlertConsumer.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.Method.invoke(Method.java:578)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1980)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1919)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:366)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:1623)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at[0m
+[0m[[0m[31merror[0m] [0m[0m535 5.7.8  https://support.google.com/mail/?p=BadCredentials c7-20020a05600c0ac700b003f4fb5532a1sm8758285wmr.43 - gsmtp[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.mail.Service.connect(Service.java:388)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.mail.Service.connect(Service.java:246)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.mail.Service.connect(Service.java:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.mail.Transport.send0(Transport.java:254)[0m
+[0m[[0m[31merror[0m] [0m[0m	at javax.mail.Transport.send(Transport.java:124)[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.EmailSender$.sendEmail(EmailSender.scala:30)[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.Main$.$anonfun$main$2(AlertConsumer.scala:56)[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.Main$.$anonfun$main$2$adapted(AlertConsumer.scala:36)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Option.foreach(Option.scala:407)[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.Main$.$anonfun$main$1(AlertConsumer.scala:36)[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.Main$.$anonfun$main$1$adapted(AlertConsumer.scala:34)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:943)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:943)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.Main$.main(AlertConsumer.scala:34)[0m
+[0m[[0m[31merror[0m] [0m[0m	at alert.Main.main(AlertConsumer.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.Method.invoke(Method.java:578)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1980)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1919)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:366)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:1623)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at[0m
+[0m[[0m[31merror[0m] [0m[0m535 5.7.8  https://support.google.com/mail/?p=BadCredentials c7-20020a05600c0ac700b003f4fb5532a1sm8758285wmr.43 - gsmtp[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 5 s, completed 27 mai 2023, 19:06:07[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

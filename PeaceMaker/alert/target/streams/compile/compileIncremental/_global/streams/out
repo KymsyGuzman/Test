@@ -1,6 +1,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 17 products, 8 sources, 9 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 17 products, 8 sources, 5 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/alert/src/main/scala/Event.scala, ${BASE}/alert/src/main/scala/Location.scala, ${BASE}/alert/src/main/scala/Person.scala, ${BASE}/alert/src/main/scala/Alert.scala, ${BASE}/alert/src/main/scala/AlertProducer.scala, ${BASE}/alert/src/main/scala/AlertConsumer.scala, ${BASE}/alert/src/main/scala/Coordonnees.scala, ${BASE}/alert/src/main/scala/EmailSender.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
 [0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
