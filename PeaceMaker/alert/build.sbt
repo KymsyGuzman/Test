@@ -5,15 +5,15 @@ name := "alert"
 //fork := true
 javaOptions += "--add-exports java.base/sun.nio.ch=ALL-UNNAMED"
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-streaming-kafka-0-10" % "3.4.0",
-  "org.apache.spark" %% "spark-streaming" % "3.4.0",
-  "org.apache.spark" %% "spark-core" % "3.4.0",
+  //"org.apache.spark" %% "spark-streaming-kafka-0-10" % "3.4.0",
+  //"org.apache.spark" %% "spark-streaming" % "3.4.0",
+  //"org.apache.spark" %% "spark-core" % "3.4.0",
   //"org.apache.spark" %% "spark-streaming-kafka-0-10" % "3.2.1",
   //"org.apache.spark" %% "spark-streaming" % "3.2.1",
   //"org.apache.spark" %% "spark-core" % "3.2.1",
-  //"org.apache.spark" %% "spark-core" % "2.4.0",
-  //"org.apache.spark" %% "spark-streaming" % "2.4.0" ,
-  //"org.apache.spark" %% "spark-streaming-kafka-0-10" % "2.4.0",
+  "org.apache.spark" %% "spark-core" % "2.4.0",
+  "org.apache.spark" %% "spark-streaming" % "2.4.0" ,
+  "org.apache.spark" %% "spark-streaming-kafka-0-10" % "2.4.0",
   "org.apache.kafka" % "kafka-clients" % "2.8.0",
   "com.typesafe.play" %% "play-json" % "2.8.0",
   //"com.fasterxml.jackson.core" % "jackson-databind" % "2.6.7",

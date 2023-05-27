@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(87019bf3-30ac-440b-885c-4fc72bcdea1f), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[33mwarn[0m] [0m[0mCompile / run / javaOptions will be ignored, Compile / run / fork is set to false[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 3 s, completed 27 mai 2023, 02:14:57[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
