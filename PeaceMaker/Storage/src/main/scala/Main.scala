@@ -33,26 +33,26 @@ object Main extends App {
   Logger.getLogger("org").setLevel(Level.ERROR)
 
   val sparkConf = new SparkConf()
-      .setMaster("local[*]")
-      .setAppName("save_aggregate")
-      .set("spark.driver.host", "127.0.0.1")
+    .setMaster("local[*]")
+    .setAppName("save_aggregate")
+    .set("spark.driver.host", "127.0.0.1")
 
   val streamContext = new StreamingContext(sparkConf, Seconds(15))
   val spark: SparkSession = SparkSession.builder.config(streamContext.sparkContext.getConf).getOrCreate()
 
   val kafkaParams = Map(
-      "bootstrap.servers" -> "localhost:9092",
-      "key.deserializer" -> classOf[StringDeserializer],
-      "value.deserializer" -> classOf[StringDeserializer],
-      "group.id" -> "aggregate"
+    "bootstrap.servers" -> "localhost:9092",
+    "key.deserializer" -> classOf[StringDeserializer],
+    "value.deserializer" -> classOf[StringDeserializer],
+    "group.id" -> "aggregate"
   )
-  
+
   val topics = Array("peacestate")
 
   val stream = KafkaUtils.createDirectStream[String, String](
-      streamContext,
-      PreferConsistent,
-      Subscribe[String,String](topics, kafkaParams)
+    streamContext,
+    PreferConsistent,
+    Subscribe[String, String](topics, kafkaParams)
   )
 
   // Process and transform the incoming stream of events
@@ -69,7 +69,7 @@ object Main extends App {
       import spark.implicits._
 
       val eventsDF = rdd.toDF()
-      eventsDF.write.mode(SaveMode.Append).parquet("hdfs://path/to/directory/events.parquet")
+      eventsDF.write.mode(SaveMode.Append).parquet("/home/kymsy/output/")
     }
 
   streamContext.start()
