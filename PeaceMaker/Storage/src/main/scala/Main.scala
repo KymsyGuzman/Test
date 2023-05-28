@@ -5,7 +5,7 @@ import play.api.libs.json._
 import java.io.FileNotFoundException
 import java.io.IOException
 import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter 
+import java.time.format.DateTimeFormatter
 
 import scala.io.Source
 
@@ -21,12 +21,10 @@ import org.apache.spark.streaming.kafka010.LocationStrategies._
 import org.apache.spark.SparkConf
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.Encoders
-import org.apache.spark.sql.SQLContext
 
 import scala.reflect.ClassTag
 
 import org.apache.log4j.{Level, Logger}
-
 
 object Main extends App {
   // keep only the errors
@@ -57,19 +55,29 @@ object Main extends App {
 
   // Process and transform the incoming stream of events
   stream.flatMap(record => {
-      val json = Json.parse(record.value())
-      Event.EventFormatter.reads(json).asOpt
-    })
+    val json = Json.parse(record.value())
+    Json.fromJson[Event](json).asOpt
+  })
     .map(event => {
       println(event)
       val serializedTime = event.timestamp.format(DateTimeFormatter.ISO_DATE_TIME)
-      SaveableEvent(event.peacewatcher_id, serializedTime, event.location, event.words, event.persons, event.battery, event.temperature)
+      SaveableEvent(
+        event.peacewatcher_id,
+        serializedTime,
+        event.location,
+        event.words,
+        event.persons,
+        event.battery,
+        event.temperature
+      )
     })
     .foreachRDD { rdd =>
       import spark.implicits._
 
-      val eventsDF = rdd.toDF()
-      eventsDF.write.mode(SaveMode.Append).parquet("/home/kymsy/output/")
+      if (!rdd.isEmpty()) {
+        val eventsDF = rdd.toDF()
+        eventsDF.write.mode(SaveMode.Append).parquet("/home/kymsy/output/")
+      }
     }
 
   streamContext.start()
